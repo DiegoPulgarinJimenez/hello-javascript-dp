@@ -90,9 +90,42 @@ console.log(productoNumeros)
 
 // 7. Escribe un bucle que imprima la tabla de multiplicar del 5
 
+let tabla = 5
+for (let i = 0; i <= 10; i++){
+    console.log(`${tabla} * ${i} = ${i * tabla} \n`)
+}
 
 // 8. Usa un bucle para invertir una cadena de texto
 
+let cadenaDeTexto = "cadena de texto a invertir"
+let cadenaInvertida = ""
+for (let index = cadenaDeTexto.length - 1; index >= 0 ; index--) {
+    cadenaInvertida += cadenaDeTexto[index]
+}
+console.log(cadenaInvertida)
 // 9. Usa un bucle para generar los primeros 10 números de la secuencia de Fibonacci
 
+let inicia = 0
+let inicia2 = 1
+let resultadoSecuencia = 0
+let limite = 9
+let secuenciaFibonacci = [inicia, inicia2]
+
+while (secuenciaFibonacci.length <= limite) {
+    resultadoSecuencia = inicia + inicia2
+    inicia = inicia2
+    inicia2 = resultadoSecuencia
+    secuenciaFibonacci.push(resultadoSecuencia)
+}
+console.log(secuenciaFibonacci)
+
 // 10. Dado un array de números, usa un bucle para crear un nuevo array que contenga solo los números mayores a 10
+
+let arrayDeNumeros = [45, 78, 12, 90, 34, 67, 23, 89, 56, 10, 92, 3, 77, 55, 81, 19, 42, 68, 74, 99, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+let arrayMayores = []
+for (const element of arrayDeNumeros) {
+    if (element > 10) {
+        arrayMayores.push(element)
+    }
+}
+console.log(arrayMayores)
