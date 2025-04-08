@@ -202,3 +202,11 @@ function calculoFactorial(params) {
 }
 console.log(numeroDado)
 console.log(calculoFactorial(numeroDado))
+
+// Función anónima
+
+const funAnonima = function (params) {
+  console.log(`Esto es una ${params}.`);
+}
+
+funAnonima("función anónima asignada a una constante")
