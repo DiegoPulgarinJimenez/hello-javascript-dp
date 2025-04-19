@@ -210,3 +210,26 @@ const funAnonima = function (params) {
 }
 
 funAnonima("función anónima asignada a una constante")
+
+let arraySumar = [3, 4, 5, 6]
+
+function sumaNumeros(...args) {
+ const resultado = args.reduce((args, elementoActual) => args + elementoActual, 0)
+ return resultado
+}
+
+console.log(sumaNumeros(...arraySumar))
+
+function sn2(...args){
+  let result = 0
+  for (let index = 0; index < args.length; index++) {
+    result += args[index]
+  }
+  let res = "El resultado es: " + result
+  return res
+}
+
+console.log(sn2(...arraySumar))
+
+arraySumar.forEach(element => console.log(element))
+

@@ -35,7 +35,7 @@ console.log(table)
 // 5. Agrega una función e invócala
 
 function rotar() {
-    console.log("La mesa ha sido rotada")
+    return "La mesa ha sido rotada"
 }
 
 table.rotar = rotar
@@ -67,10 +67,13 @@ const casa = {
     color : "White"
 }
 
+casa.cuartos.cantidad = 3
+
 // 8. Accede y muestra el valor de las propiedades anidadas
 
 console.log(casa.cuartos)
 casa.cuartos.vender()
+console.log(casa.cuartos.cantidad)
 
 // 9. Comprueba si los dos objetos creados son iguales
 
@@ -81,3 +84,4 @@ console.log(table === casa)
 console.log(casa.color === casa.cuartos.color)
 console.log(table.color === casa.color)
 console.log(table.color === casa.cuartos.color)
+console.log(table.rotar())
