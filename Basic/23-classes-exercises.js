@@ -155,7 +155,7 @@ let animal1 = new Animal("Cat", 3, "Big")
 
 console.log(animal1.walk())
 
-class Cangaroo extends Animal {
+class Kangaroo extends Animal {
     constructor (name, age, size){
         super(name, age, size)
     }
@@ -164,6 +164,6 @@ class Cangaroo extends Animal {
     }
 }
 
-let cangaroo1 = new Cangaroo("Cangaroo")
+let cangaroo1 = new Kangaroo("Kangaroo")
 
 console.log(cangaroo1.walk())
